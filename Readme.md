@@ -13,3 +13,15 @@ $$Q = Q_0 · f\(V_{Battery}\)$$
 $$\frac{dQ}{dt} = I_{Load}\(V_{Battery}\)$$
 
 For my work here, I will just use Euler method to solve this equation.
+
+## Alternate Modeling Approach
+
+The ODE-based approach has proven quite accurate. I have started to wonder if there might be an easier way to obtain the same result. Consider the following derivation.
+
+$$Q = SOC\(V\) \rightarrow dQ = SOC'\(V\) \cdot dV$$
+
+$$dt = -\frac{dQ}{I\(V\)}$$
+
+$$T =  \int_{Q_0}^{0} -\frac{SOC'\(V\)}{I\(V\)}\cdot dV $$
+
+I should be able to easily evaluate this in a tool like Mathcad. This will be one line of reasoning.
