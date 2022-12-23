@@ -18,7 +18,7 @@ For my work here, I will just use Euler method to solve this equation.
 
 The ODE-based approach has proven quite accurate. I have started to wonder if there might be an easier way to obtain the same result. Consider the following derivation, where Q<sub>0</sub> is the battery's capacity at full charge.
 
-$$Q = SOC\(V\) \rightarrow dQ = Q_0 \cdot SOC'\(V\) \cdot dV$$
+$$Q = Q_0 \cdot SOC\(V\) \rightarrow dQ = Q_0 \cdot SOC'\(V\) \cdot dV$$
 
 $$dt = -\frac{dQ}{I\(V\)}$$
 
