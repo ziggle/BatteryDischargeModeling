@@ -16,12 +16,12 @@ For my work here, I will just use Euler method to solve this equation.
 
 ## Alternate Modeling Approach
 
-The ODE-based approach has proven quite accurate. I have started to wonder if there might be an easier way to obtain the same result. Consider the following derivation.
+The ODE-based approach has proven quite accurate. I have started to wonder if there might be an easier way to obtain the same result. Consider the following derivation, where Q<sub>0</sub> is the battery's capacity at full charge.
 
-$$Q = SOC\(V\) \rightarrow dQ = SOC'\(V\) \cdot dV$$
+$$Q = SOC\(V\) \rightarrow dQ = Q_0 \cdot SOC'\(V\) \cdot dV$$
 
 $$dt = -\frac{dQ}{I\(V\)}$$
 
-$$T =  \int_{Q_0}^{0} -\frac{SOC'\(V\)}{I\(V\)}\cdot dV $$
+$$T =  \int_{Q_0}^{0} -Q_0 \cdot \frac{SOC'\(V\)}{I\(V\)}\cdot dV $$
 
 I should be able to easily evaluate this in a tool like Mathcad. This will be one line of reasoning.
