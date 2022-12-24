@@ -24,4 +24,6 @@ $$dt = -\frac{dQ}{I\(V\)}$$
 
 $$T =  \int_{Q_0}^{0} -Q_0 \cdot \frac{SOC'\(V\)}{I\(V\)}\cdot dV $$
 
-I should be able to easily evaluate this in a tool like Mathcad. This will be one line of reasoning.
+I should be able to easily evaluate this in a tool like Mathcad. This will be one line of reasoning. 
+
+Numerically, this approach is a problem because it involves computing a numerical derivative. These rarely work because they are noisy. In my case, I do not have well-characterized current vs voltage data on the hardware.
