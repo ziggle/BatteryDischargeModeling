@@ -4,6 +4,12 @@
 
 A critical part of my job is estimating how long a system will run off of a single battery charge. Historically, these estimates have been made using simple linear models using average currents. I have recently run some tests that show this approach is not accurate enough for some loads. People generally are satisfied with run time estimates that are accurate within ±5%. I recently had some estimates that were off by 20% using a simple linear model and it is time to improve my model.
 
+## Objectives
+
+* Establish the process needed to produce accurate operating time estimates
+* Specify the information required for this process.<br>Things like (1) HA current vs voltage, (2) battery capacity variability, (3) SOC.
+* Specify the calculations needed to generate estimates.
+
 ## Mathematical Model
 
 I am starting out with the simple first-order ODE model shown below.
