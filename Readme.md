@@ -16,6 +16,11 @@ A critical part of my job is estimating how long a system will run off of a sing
 
 This effort will be complete when my residuals show no systematic variation — the residuals are normally distributed with zero mean. This will allow me to estimate the accuracy of my modeling.
 
+## Accu30 Discharge Measurement
+
+I am including an Excel spreadsheet that I am including as a candidate for a template to use for Keithley 2401A-based discharge analysis. The spreadsheet is simple, but does the job.
+Ideally, I need to include charging and data from multiple batteries. This work will come, it just takes time.
+
 ## Mathematical Model
 
 I am starting out with the simple first-order ODE model shown below.
